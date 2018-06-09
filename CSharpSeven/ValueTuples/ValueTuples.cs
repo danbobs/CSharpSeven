@@ -1,4 +1,6 @@
-﻿namespace CSharpSeven
+﻿using System.Collections.Generic;
+
+namespace CSharpSeven
 {
     public class ValueTuples
     {
@@ -32,6 +34,18 @@
             var (configItem, success) = result;
             // or access items like this
             bool isSuccess = result.Item2; // just like old System.Tuple
+        }
+
+        public void TupleTricks()
+        {
+            int x = 1; int y = 2;
+            // swap x,y values without third var
+            (x, y) = (y, x); // x  = 2, y = 1
+
+
+            var queue = new List<string>() { "Tom", "Dan", "Alan" };
+            // Pop first item to the back of queue
+            (queue[0], queue[1], queue[2]) = (queue[1], queue[2], queue[0]); // Now "Dan", "Alan", "Tom"
         }
 
 
