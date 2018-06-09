@@ -14,6 +14,8 @@ namespace CSharpSeven
             vtExample.TupleTricks();
             var cpm = new CasePatternMatching();
             cpm.PatternMatch();
+            var tcac = new TypeConversionsAndChecking();
+            tcac.Run();
         }
     }
 }
