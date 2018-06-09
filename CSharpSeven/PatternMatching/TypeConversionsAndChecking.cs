@@ -36,7 +36,7 @@ namespace CSharpSeven
                 Console.WriteLine($"is int {i}");
             }
 
-            if (input is 42) // pfffh. How is better than input == 42?
+            if (input is 42) // pfffh. How is this better than input == 42?
             {
                 Console.WriteLine("Is 42");
             }
