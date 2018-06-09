@@ -15,7 +15,7 @@ namespace CSharpSeven
                 case 42: // constant pattern (no change here)
                     Console.WriteLine("it's 42");
                     break;         
-                case int i: // type pattern: test that the input has type T, and if so, extracts the value of the input into a fresh variable of type T
+                case int i: // type pattern: test input has type T. If so, extract value of input into fresh variable of type T
                     Console.WriteLine($"it's an int of value {i}");
                     break;
                 case Person p when p.FirstName.StartsWith("Dan"):   // type pattern with a when filter
@@ -24,8 +24,8 @@ namespace CSharpSeven
                 case Person p:
                     Console.WriteLine($"any other person {p.FirstName}");
                     break;
-                case var x: // var pattern: always match, and put the value of the input into a fresh variable with the same type as the input (object)
-                    Console.WriteLine($"it's a var pattern with the type {x?.GetType().Name ?? "(null)"}");    // not that this case will match null
+                case var x: // var pattern: always match, put the value input into variable of input type (object)
+                    Console.WriteLine($"it's a var pattern with the type {x?.GetType().Name ?? "(null)"}"); 
                     break;
                 default: //default is alway evaluated last regardless of order
                     break;
