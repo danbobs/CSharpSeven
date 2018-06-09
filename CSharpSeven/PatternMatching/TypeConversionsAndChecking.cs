@@ -25,7 +25,7 @@ namespace CSharpSeven
             {
                 // did we end up here because input was null or not a string?
             }
-            // cons: we accessed input twice, not for value types, confusion around null
+            // cons: we accessed input twice, not for non-nullable types, confusion around null
         }
 
         private void CSharp7TypeCheckingAndConversion(object input)
