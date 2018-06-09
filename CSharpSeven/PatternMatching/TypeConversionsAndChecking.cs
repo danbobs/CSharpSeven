@@ -41,7 +41,7 @@ namespace CSharpSeven
                 Console.WriteLine("Is 42");
             }
 
-            if (input is var x) // Var mathcing. Huh? Always true, no type conversion either. Useful how?
+            if (input is var x) // Var matching. Huh? Always true, no type conversion either. Useful how?
             {
                 Console.WriteLine($"Is type {x?.GetType().Name ?? "(null)"}");
             }
