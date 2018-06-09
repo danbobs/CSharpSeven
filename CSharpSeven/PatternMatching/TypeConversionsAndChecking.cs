@@ -30,10 +30,23 @@ namespace CSharpSeven
 
         private void CSharp7TypeCheckingAndConversion(object input)
         {
+            // Awesome
             if (input is int i || (input is string s && int.TryParse(s, out i)))
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"is int {i}");
             }
+
+            if (input is 42) // pfffh. How is better than input == 42?
+            {
+                Console.WriteLine("Is 42");
+            }
+
+            if (input is var x) // Huh? Always true, no type conversion either. USeful how?
+            {
+                Console.WriteLine($"Is type {x?.GetType().Name ?? "(null)"}");
+            }
+
+            
         }
 
         public void Run()
