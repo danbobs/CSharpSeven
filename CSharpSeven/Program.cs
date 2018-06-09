@@ -10,6 +10,8 @@ namespace CSharpSeven
     {
         static void Main(string[] args)
         {
+            var vtExample = new ValueTuples();
+            vtExample.Deconstruction();
         }
     }
 }
