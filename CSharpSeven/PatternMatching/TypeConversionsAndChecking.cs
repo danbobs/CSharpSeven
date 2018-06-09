@@ -12,7 +12,7 @@ namespace CSharpSeven
             {
                 int i = (int) input;
             }
-            // pros: can convert value types
+            // pros: can convert non-nullable types
             // cons: we accessed input twice
 
             // conversion using  "as" operator
