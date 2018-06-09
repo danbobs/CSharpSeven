@@ -28,7 +28,7 @@
             // deconstruct again
             var (configItem, success) = result;
             // or access items like this
-            bool isSuccess = result.Item2;
+            bool isSuccess = result.Item2; // just like old System.Tuple
         }
 
 
