@@ -17,6 +17,10 @@
 
             bool isSuccess = result.success;
             string configItem = result.configItem;
+
+            // tuple literal with named elements
+            var fullName = (Forename: "Dan", MiddleName: "", Surname: "Poxton");
+
         }
 
 
