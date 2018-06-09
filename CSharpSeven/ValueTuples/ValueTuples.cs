@@ -18,6 +18,9 @@
             (var configItem3, var success3) = TryGetConfig("SomeKey");
             // re-use previous declaration
             (configItem, success) = TryGetConfig("SomeKey");
+            // wildcard discards
+            (_, success) = TryGetConfig("SomeKey");
+
         }
 
         public void StillFirstClassObjects()
