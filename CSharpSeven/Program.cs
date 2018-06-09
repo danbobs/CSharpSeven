@@ -12,6 +12,8 @@ namespace CSharpSeven
         {
             var vtExample = new ValueTuples();
             vtExample.TupleTricks();
+            var cpm = new CasePatternMatching();
+            cpm.PatternMatch();
         }
     }
 }
