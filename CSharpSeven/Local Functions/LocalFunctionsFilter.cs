@@ -51,7 +51,7 @@ namespace CSharpSeven
         // alternative using anonymous lambda function
         public IEnumerable<T> Filter3<T>(IEnumerable<T> source, Func<T, bool> filter)
         {
-            // Nope! Yield not supported in anoynmous 
+            // Nope! Yield not supported in anonymous 
             //Func<IEnumerable<T>> iterator = () =>
             //{
             //    foreach (var element in source)
