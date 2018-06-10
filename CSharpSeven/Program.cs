@@ -16,6 +16,8 @@ namespace CSharpSeven
             cpm.PatternMatch();
             var tcac = new TypeConversionsAndChecking();
             tcac.Run();
+            var rrl = new RefReturnsLocals();
+            rrl.Run();
         }
     }
 }
