@@ -41,11 +41,11 @@ namespace CSharpSeven
         }
 
 
-        public ref int Dangerous()
-        {
-            int x = 1;
-            return ref x;   // not allowed, x is not ref local. Can only return refs that are "safe" to return.                      
-        }
+        //public ref int Dangerous()
+        //{
+        //    int x = 1;
+        //    return ref x;   // not allowed, x is not ref local. Can only return refs that are "safe" to return.                      
+        //}
 
     }
 }

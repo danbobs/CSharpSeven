@@ -52,6 +52,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefReturnsLocals\RefReturnsLocals.cs" />
+    <Compile Include="ThrowExpressions\ThrowExpressions.cs" />
     <Compile Include="ValueTuples\DeconstructPoint.cs" />
     <Compile Include="ValueTuples\ValueTuplesNamed.cs" />
     <Compile Include="ValueTuples\ValueTuples.cs" />
