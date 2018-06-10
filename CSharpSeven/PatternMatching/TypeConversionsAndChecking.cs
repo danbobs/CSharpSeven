@@ -12,20 +12,14 @@ namespace CSharpSeven
             {
                 int i = (int) input;
             }
-            // pros: can convert non-nullable types
-            // cons: we accessed input twice
 
-            // conversion using  "as" operator
+            // conversion using  "as" operator (nullable types only)
             string text = input as string;
             if (text != null)
             {
                 Console.WriteLine(text);
             }
-            else
-            {
-                // did we end up here because input was null or not a string?
-            }
-            // cons: we accessed input twice, not for non-nullable types, confusion around null
+
         }
 
         private void CSharp7TypeCheckingAndConversion(object input)
@@ -57,6 +51,7 @@ namespace CSharpSeven
             OldSchoolTypeCheckingAndConversion(new Object());
             CSharp7TypeCheckingAndConversion(21);
             CSharp7TypeCheckingAndConversion("21");
+            CSharp7TypeCheckingAndConversion(null);
         }
 
     }
