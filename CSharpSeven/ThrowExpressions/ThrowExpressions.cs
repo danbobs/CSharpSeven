@@ -25,12 +25,20 @@ namespace CSharpSeven
                 result = DoSomething(str);
         }
 
+        // technically posssible to throw in expression by wrapping in anonymous func, y'know, yuk.
+        public void OldSchool2(string str)
+        {
+            var result = (str == null) ? new Func<string>(() => { throw new Exception(); })() : DoSomething(str);
+        }
+
         public void ThrowExpression(string str)
         {
             // with throw expression
-            var result = DoSomething(str) ?? throw new ArgumentNullException(str);
+            var result = (str == null) ? throw new ArgumentNullException(str) : DoSomething(str);
+            result = str ?? throw new ArgumentNullException(str);
             // not allowed though surprisingly
             //result = throw new ArgumentNullException(str); // "A throw expression is not allowed in this context"
+
         }
 
     }
