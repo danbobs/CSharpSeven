@@ -30,7 +30,7 @@ namespace CSharpSeven
             // with throw expression
             var result = DoSomething(str) ?? throw new ArgumentNullException(str);
             // not allowed though surprisingly
-             result = throw new ArgumentNullException(str); // "A throw expression is not allowed in this context"
+            //result = throw new ArgumentNullException(str); // "A throw expression is not allowed in this context"
         }
 
     }
