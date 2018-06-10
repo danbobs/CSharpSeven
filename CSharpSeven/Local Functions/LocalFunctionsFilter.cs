@@ -41,7 +41,7 @@ namespace CSharpSeven
         }
 
         // cons: 
-        // - less well encapssulated
+        // - less well encapsulated
         // - replicated generics syntax & args again on internal function
         // - users of class might use internal func unwittingly and skip the param checking
 
