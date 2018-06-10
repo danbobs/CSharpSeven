@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Local Functions\LocalFunctionsFibonacci.cs" />
+    <Compile Include="Local Functions\LocalFunctionsFilter.cs" />
     <Compile Include="PatternMatching\CasePatternMatching.cs" />
     <Compile Include="PatternMatching\TypeConversionsAndChecking.cs" />
     <Compile Include="Program.cs" />
