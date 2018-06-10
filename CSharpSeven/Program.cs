@@ -18,6 +18,7 @@ namespace CSharpSeven
             tcac.Run();
             var rrl = new RefReturnsLocals();
             rrl.Run();
+            rrl.Experiments();
         }
     }
 }
