@@ -9,7 +9,6 @@ namespace CSharpSeven
     public class ThrowExpressions
     {
 
-
         private string DoSomething(string str)
         {
             return str + "something";
@@ -37,7 +36,9 @@ namespace CSharpSeven
             var result = (str == null) ? throw new ArgumentNullException(str) : DoSomething(str);
             result = str ?? throw new ArgumentNullException(str);
             // not allowed though surprisingly
-            //result = throw new ArgumentNullException(str); // "A throw expression is not allowed in this context"
+            // result = throw new ArgumentNullException(str); // "A throw expression is not allowed in this context"
+            // Also not allowed
+            // bool ok = (str != null) || throw new ArgumentNullException(str); // "invalid expression throw"
 
         }
 
