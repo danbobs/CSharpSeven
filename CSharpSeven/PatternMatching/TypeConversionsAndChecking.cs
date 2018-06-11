@@ -24,7 +24,7 @@ namespace CSharpSeven
 
         private void CSharp7TypeCheckingAndConversion(object input)
         {
-            // Awesome type matching
+            // Awesome type matching (note: i is defined in all conditional paths)
             if (input is int i || (input is string s && int.TryParse(s, out i)))
             {
                 Console.WriteLine($"is int {i}");
