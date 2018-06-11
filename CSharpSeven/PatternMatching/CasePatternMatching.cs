@@ -7,10 +7,8 @@ namespace CSharpSeven
     {
 
         private static void SwitchPattern(object o)
-        {
-            // can now switch on something other than primitive types, in this case an object
-            // also note that order is now important
-            switch (o)
+        {       
+            switch (o) // can now switch on any (non-null) expression. C#6: expression returning val of primitive type
             {
                 case 42: // constant pattern (no change here)
                     Console.WriteLine("it's 42");
@@ -21,6 +19,7 @@ namespace CSharpSeven
                 case Person p when p.FirstName.StartsWith("Dan"):   // type pattern with a when filter
                     Console.WriteLine($"a Dan of some sort: {p.FirstName}");
                     break;
+                // also note that order is now important
                 case Person p:
                     Console.WriteLine($"any other person {p.FirstName}");
                     break;
